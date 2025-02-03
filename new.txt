@@ -1,1 +1,2 @@
 hi
+new file, it may go to ignorefile.
