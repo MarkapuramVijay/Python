@@ -21,19 +21,26 @@ git log --oneline									View concise commit history.
 git log --oneline --graph --all						View a graphical all commited history.
 git diff											Show changes between commits, branches, or working state.
 
-8. Stashing Changes
+8. Stashing Changes (work on only staged files, not untracked files)
+
 Command												Description
 git stash											Save changes without committing.
 git stash list										Show list of saved stashes.
-git stash pop										Restore the most recent stash.
+git stash pop										Restore the most recent stash.(apply+drop)
 git stash apply										Apply a stash but keep it saved.
+git stash drop										After apply should drop from stash.
+git stash apply stash@{index} --(index=any ex.1)	Get stash using index.
+git stash -u 										work on untracked files
 
-9. Tagging
+9. Tagging (work on only untracked files)
+
 Command												Description
 git tag												List all tags.
 git tag <tag_name>									Create a new tag.
 git tag -a <tag_name> -m "message"					Create an annotated tag.
 git push origin <tag_name>							Push a specific tag to remote.
+git tag -a <tagName> commitId						create tag selected commitId
+git tag -a <tagName> -f newCommitId					move tag from one to another commitId
 
 10. Advanced Commands
 Command												Description
