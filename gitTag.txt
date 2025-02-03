@@ -1,0 +1,12 @@
+9. Tagging
+Command											Description
+git tag											List all tags.
+git tag <tag_name>								Create a new tag.
+git tag -a <tag_name> -m "message"				Create an annotated tag.
+git push origin <tag_name>						Push a specific tag to remote.
+git diff tag1 tag2								difference b/w 2 tags
+git tag -a tagName commitId						create tag at selected commitId
+git tag -a tagName -f newCommitId				move tag forcely from one commit to another
+git push origin main tagName					push tag to repository
+git push origin main --tags						push all tags to repository
+git tag list "v1.*"								get list of tags with v1.*
