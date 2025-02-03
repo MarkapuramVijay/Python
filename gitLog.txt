@@ -1,0 +1,43 @@
+5. Remote Repositories
+Command												Description
+git remote -v										List all remote repositories.
+git remote add origin <repo_url>					Add a new remote repository.
+git push origin <branch_name>						Push branch to remote repository.
+git push -u origin <branch_name>					Push and track a new branch.
+git fetch origin									Fetch changes from remote repository.
+git pull origin <branch-name>						Pull latest changes from remote repository.
+
+6. Undoing Changes
+Command												Description
+git reset <file>									Unstage a file.
+git reset --hard HEAD								Reset all changes to the last commit.
+git reset --soft HEAD~1								Undo last commit but keep changes staged.
+git revert <commit_id>								Create a new commit that undoes a specific commit.
+
+7. Viewing History
+Command												Description
+git log												View commit history.
+git log --oneline									View concise commit history.
+git log --oneline --graph --all						View a graphical all commited history.
+git diff											Show changes between commits, branches, or working state.
+
+8. Stashing Changes
+Command												Description
+git stash											Save changes without committing.
+git stash list										Show list of saved stashes.
+git stash pop										Restore the most recent stash.
+git stash apply										Apply a stash but keep it saved.
+
+9. Tagging
+Command												Description
+git tag												List all tags.
+git tag <tag_name>									Create a new tag.
+git tag -a <tag_name> -m "message"					Create an annotated tag.
+git push origin <tag_name>							Push a specific tag to remote.
+
+10. Advanced Commands
+Command												Description
+git rebase <branch>									Reapply commits on top of another base branch.
+git cherry-pick <commit_id>							Apply a specific commit to the current branch.
+git bisect start									Start a binary search to find a bug.
+git reflog											View a log of changes to HEAD.
