@@ -1,0 +1,21 @@
+1. Configuration Commands
+Command														Description
+git config --global user.name "Your Name"					Set the global username for Git commits.
+git config --global user.email "your_email@example.com"		Set the global email for Git commits.
+git config --global color.ui auto							Enable color-coded output in Git Bash.
+git config --list											Display all Git configurations.
+git config --global core.editor "vim"						Set the default text editor for Git.
+
+2. Repository Setup Commands
+Command														Description
+git init													Initialize a new Git repository.
+git clone <repo_url>										Clone a remote repository.
+
+3. Basic Snapshotting (Staging & Committing)
+Command														Description
+git status													Check the status of your working directory.
+git add <file>												Stage a specific file for commit.
+git add .													Stage all modified files.
+git commit -m "commit message"								Commit staged changes with a message.
+git commit -am "commit message"								Add & commit changes in one step.
+git rm <file>												Remove a file from tracking.
