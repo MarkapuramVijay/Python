@@ -14,3 +14,4 @@ git branch --no-merge			list branches not merged into current branch
 git clean -f					clean/remove only untracked files
 git clean -f -d					clean/remove only untracked files & folders
 git clean -f -d	-x				clean/remove only untracked files, folders & .gitignore files too.
+git clean -f -n          reflect msg(would like to remove),this best practce to use before clean any.
