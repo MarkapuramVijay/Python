@@ -23,3 +23,8 @@ print(["Even" for i in range(1,6) if i%2==0])
 #['Odd', 'Even', 'Odd', 'Even', 'Odd']
 #[10, 20, 30, 40, 50, 60, 70, 80, 90]
 #['Even', 'Even']
+
+print({(i,j*2):(i,k**2) for i,j,k in zip([1,2,3],[1,2,3],[1,2,3])})
+
+#Result  : {(1, 2): (1, 1), (2, 4): (2, 4), (3, 6): (3, 9)}
+
